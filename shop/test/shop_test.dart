@@ -47,6 +47,7 @@ void main() {
         Product(AppConstants.defaultHeadphonesId, AppConstants.defaultHeadphonesName, AppConstants.defaultHeadphonesPrice),
       ];
       expect(findProductById(catalog, AppConstants.defaultLaptopId)?.name, AppConstants.defaultLaptopName);
+      expect(findProductById(catalog, AppConstants.defaultSmartphoneId)?.name, AppConstants.defaultSmartphoneName);
       expect(findProductById(catalog, AppConstants.defaultHeadphonesId)?.name, AppConstants.defaultHeadphonesName);
       expect(findProductById(catalog, 5), isNull);
       expect(findProductById(catalog, 0), isNull);
